@@ -1,7 +1,7 @@
 import java.util.GregorianCalendar;
 import java.util.Date;
 import java.text.*;
-
+//To do this class I took notes from lab 10 and 14 from OOP
 public abstract class Student implements Person{
     private String name;
     private String address;

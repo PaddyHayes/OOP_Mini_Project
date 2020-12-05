@@ -12,7 +12,7 @@ public class AmendLecturerForm {
     private JTextField textField3;
     private JTextField textField4;
     private JTextField textField5;
-
+//I looked at notes from the GUI design demo and used them in this class to get a better grasp of what I needed for the GUI
     public AmendLecturerForm() {
         amendButton.addActionListener(new ActionListener() {
             @Override

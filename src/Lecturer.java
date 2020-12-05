@@ -1,13 +1,14 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
-
+//I took these using notes from lab 10 and 14 of OOP
 public abstract class Lecturer implements Person {
     private String name;
     private String address;
     private GregorianCalendar dateOfBirth;
     private String module;
     private String ID;
+//To do the lecturer class I had taken notes from both lab 10 and 14 of OOP
 
     public Lecturer(){
         this("Undefined", "Undefined", null, "Undefined", "Undefined");
