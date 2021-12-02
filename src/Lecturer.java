@@ -33,6 +33,10 @@ public abstract class Lecturer implements Person {
         this.name = name;
     }
 
+    public String getAddress() { return address; }
+
+    public void setAddress(String address) { this.address = address; }
+
     public GregorianCalendar getDateOfBirth() {
         return dateOfBirth;
     }
@@ -59,9 +63,9 @@ public abstract class Lecturer implements Person {
 
     @Override
     public String toString() {
-        String str = "Student name is " + getName() +
-                "\nStudent address is " + getAddress() +
-                "\nStudent date of birth is ";
+        String str = "Lecturer name is " + getName() +
+                "\nLecturer address is " + getAddress() +
+                "\nLecturer date of birth is ";
 
         if(getDateOfBirth()!=null)
         {
@@ -74,8 +78,8 @@ public abstract class Lecturer implements Person {
         else
             str+="Undefined";
 
-        str+= "\nStudent Module is " + getModule() +
-                "\nStudent ID is " + getID();
+        str+= "\nLecturer is " + getModule() +
+                "\nLecturer ID is " + getID();
 
         return str;
     }

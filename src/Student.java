@@ -8,7 +8,7 @@ public abstract class Student implements Person{
     private GregorianCalendar dateOfBirth;
     private String course;
     private String module;
-    private String ID;
+    private String studentID;
 
     public Student(){
         this("Undefined", "Undefined", null, "Undefined", "Undefined", "Undefined");
@@ -22,7 +22,7 @@ public abstract class Student implements Person{
         setDateOfBirth(dateOfBirth);
         setCourse(course);
         setModule(module);
-        setID(ID);
+        setID(studentID);
     }
 
 
@@ -33,6 +33,10 @@ public abstract class Student implements Person{
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getAddress() { return address; }
+
+    public void setAddress(String address) { this.address = address; }
 
     public GregorianCalendar getDateOfBirth() {
         return dateOfBirth;
@@ -54,13 +58,14 @@ public abstract class Student implements Person{
         this.module = module;
     }
 
-    public String getID() {
-        return ID;
+    public String getStudentID() {
+        return studentID;
     }
 
     public void setID(String ID) {
-        this.ID = ID;
+        this.studentID = studentID;
     }
+
 
     @Override
     public String toString() {
@@ -81,7 +86,7 @@ public abstract class Student implements Person{
 
         str+="\nStudent Course is " + getCourse() +
                 "\nStudent Module is " + getModule() +
-                "\nStudent ID is " + getID();
+                "\nStudent ID is " + getStudentID();
 
         return str;
     }
